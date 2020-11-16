@@ -20,9 +20,10 @@ Do the following:
 let votingAge = 21;
 
 if (votingAge >= 18) {
-  true
+    true
 }
-console.log(votingAge);
+
+
 
 
 /*
@@ -35,10 +36,15 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
-
+let message = 'Hello Beautiful!'
+let age = 22;
+if (22 > 18) {
+    message = 'Hello Beautiful'
+} else if (22 < 39) {
+    message = 'Hello Gorgeous';
+} else {
+    message = 'Hi Whats Your Name?';
+}
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -50,6 +56,12 @@ Do the following:
 
    HINT: look up the Number method
 */
+let string = "1999";
+
+function convert(string) {
+    return parseInt(string);
+}
+
 
 
 
@@ -63,10 +75,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
-
+function multiply(a, b) {
+    return a * b
+}
+multiply(5, 8);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -79,10 +91,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age) {
+    return age * 7
 }
-
+dogYears(28);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -110,12 +122,30 @@ Use the hungryDog function and feeding requirements below to do the following:
      7 - 12 months 4% of their body weight
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
-*/  
+*/
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
-
+function hungryDog(weight, age) {
+    if (age >= 1) {
+        if (weight <= 5) {
+            return .05 * weight
+        } else if (weight <= 10) {
+            return .04 * weight
+        } else if (weight <= 15) {
+            return .03 * weight
+        } else if (weight > 15) {
+            return .02 * weight
+        }
+    } else if (age < 1 && age > 0) {
+        if (age >= (2 / 12) && age <= (4 / 12)) {
+            return .1 * weight
+        } else if (age > (4 / 12) && age <= (7 / 12)) {
+            return .05 * weight
+        } else if (age > (7 / 12) && age < 1) {
+            return .04 * weight
+        }
+    }
+}
+hungryDog(15, 1);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -137,11 +167,11 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(user, computer){
+function game(user, computer) {
     /*add your code here*/
 }
-  
-  
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -154,9 +184,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles( /*add your code here*/ ) {
     /*add your code here*/
-  }
+}
 
 
 
@@ -168,10 +198,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet( /*add your code here*/ ) {
     /*add your code here*/
-  }
- 
+}
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -184,9 +214,9 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong( /*add your code here*/ ) {
+    /*add your code here*/
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -203,14 +233,14 @@ Using the grade function below do the following:
    60-69 =  D 
    below 60 = F
 */
-  
-function grade(/*add your code here*/){
+
+function grade( /*add your code here*/ ) {
     /*add your code here*/
-  }
-  
-  
-  
-  
+}
+
+
+
+
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -225,19 +255,19 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
+function vowelCounter( /*add your code here*/ ) {
     /*add your code here*/
 }
 
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-function foo(){
+function foo() {
     console.log('its working');
     return 'bar';
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
+export default {
     foo,
     multiply,
     dogYears,
