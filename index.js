@@ -17,7 +17,12 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 21;
 
+if (votingAge >= 18) {
+  true
+}
+console.log(votingAge);
 
 
 /*
