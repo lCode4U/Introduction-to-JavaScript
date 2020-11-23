@@ -166,10 +166,19 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+const user = (Math.random(0.5));
+const computer = (Math.random(1));
 
 function game(user, computer) {
-    /*add your code here*/
-}
+    if (user >= computer) {
+        return 'you lose!';
+    } else (user <= computer) 
+        return 'you win!';
+       {
+        return 'its a tie';
+    }
+    }
+game();
 
 
 
