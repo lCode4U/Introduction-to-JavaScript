@@ -1,6 +1,6 @@
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
-/*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
+/*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON"T, THE AUTOGRADER WILL NOT WORK*/
 
 /*
 When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.
@@ -36,14 +36,14 @@ Do the following:
 
    HINT: no function required
 */
-let message = 'Hello Beautiful!'
+let message = "Hello Beautiful!"
 let age = 22;
 if (22 > 18) {
-    message = 'Hello Beautiful'
+    message = "Hello Beautiful"
 } else if (22 < 39) {
-    message = 'Hello Gorgeous';
+    message = "Hello Gorgeous";
 } else {
-    message = 'Hi Whats Your Name?';
+    message = "Hi Whats Your Name?";
 }
 
 /*
@@ -150,35 +150,44 @@ hungryDog(15, 1);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
-// Rock, Paper, Scissors - Let's play against the computer!
+// Rock, Paper, Scissors - Let"s play against the computer!
 /*
-Create a global variable that randomly generates the computer's choice
+Create a global variable that randomly generates the computer"s choice
 Use Math.random to determine the computers choice (Math.random gives a random number between 0 and 1)
 
 Use the game function below to do the following:
-  1. Receive 2 parameters the user's choice and the computer's choice
+  1. Receive 2 parameters the user"s choice and the computer"s choice
   2. Return whether the user won, lost, or tied based on these rules of the game described below
    - win should return "you win!"
    - lose should return "you lose!"
-   -tie should return "it's a tie"
+   -tie should return "it"s a tie"
   
-  RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
+  RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there"s a tie
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-const user = (Math.random(0.5));
-const computer = (Math.random(1));
-
+let i =  0 ; i < 10; i++;
+const user = Math.random
+const computer = Math.random
 function game(user, computer) {
-    if (user >= computer) {
-        return 'you lose!';
-    } else (user <= computer) 
-        return 'you win!';
-       {
-        return 'its a tie';
+    if (user > computer)  {
+        return "you win!"; {
+console.log(" Scissors Beats Paper");
+        }
+    } else (user < computer)
+        return "you lose!"; {
+            console.log("Paper Beats Rock");
+        }
+                  {
+        return "its a tie"; {
+            console.log("Its A Tie");
+        }
+      }
     }
-    }
+    
 game();
+
+
 
 
 
@@ -193,11 +202,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles( /*add your code here*/ ) {
-    /*add your code here*/
+function miles(km) {
+return km * 0.621371
 }
 
-
+miles();
 
 //Task 5b - Feet to CM
 /*
@@ -207,26 +216,27 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet( /*add your code here*/ ) {
-    /*add your code here*/
+function feet(cm) {
+    return cm / 30.48
 }
-
+feet();
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
-// Let's Sing 99 Bottles of Soda on the Wall!
+// Let"s Sing 99 Bottles of Soda on the Wall!
 /*
 Using the annoyingSong function below do the following:
   1. Receive a starting number and start to count down from the number received 
   2. At each iteration, it should return this string: 
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
-
-function annoyingSong( /*add your code here*/ ) {
-    /*add your code here*/
+function annoyingSong(i) {
+    const loop = 0; i < 3; i++;} {
+    return 0 + "bottles of soda on the wall," loop + " bottles of soda, take one down pass it around" + loop + " bottles of soda on the wall"
+    }
 }
-
+annoyingSong();
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -243,7 +253,7 @@ Using the grade function below do the following:
    below 60 = F
 */
 
-function grade( /*add your code here*/ ) {
+function grade(score) {
     /*add your code here*/
 }
 
@@ -259,7 +269,7 @@ Using the vowelCounter function below do the following:
   1. Receive a string as a parameter
   2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
 
-  HINT - you may need to study tomorrow's content on arrays 
+  HINT - you may need to study tomorrow"s content on arrays 
   HINT - try looking up the .includes() method
 */
 
@@ -272,10 +282,10 @@ function vowelCounter( /*add your code here*/ ) {
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo() {
-    console.log('its working');
-    return 'bar';
+    console.log("its working");
+    return "bar";
 }
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don"t touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 export default {
     foo,
     multiply,
