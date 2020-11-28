@@ -235,7 +235,7 @@ function annoyingSong(i) {
     const loop = 0; i < 3; i++;} {
     return 0 + "bottles of soda on the wall," loop + " bottles of soda, take one down pass it around" + loop + " bottles of soda on the wall"
     }
-}
+
 annoyingSong();
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
