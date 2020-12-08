@@ -249,8 +249,9 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 function annoyingSong(i) {
-    const loop = 0; i < 3; i++;} {
-    return 0 + "bottles of soda on the wall," loop + " bottles of soda, take one down pass it around" + loop + " bottles of soda on the wall"
+    for (bottles>0; bottles--){
+        return "${bottles} bottles of soda on the wall ${bottles} of soda, take one down and pass it around ${bottlesa-1
+        }"
     }
 
 annoyingSong();
@@ -271,7 +272,21 @@ Using the grade function below do the following:
 */
 
 function grade(score) {
-    /*add your code here*/
+    if (score >= 90){
+        return 'you got an A'
+    }
+    else if (score >= 80){
+        return 'you got an B'
+    }
+    else if (score >= 70){
+        return 'you got an C'
+    }
+    else if (score >= 60){
+        return 'you got an D'
+    }
+    else {
+        return 'you got a F'
+    }
 }
 
 
