@@ -166,8 +166,10 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+const computer = Math.floor(Math.random() * 8 + 1);
+const user = Math.floor(Math.random(1));
 function game (computer){ 
-    var computer = Math.floor(Math.random() * 8 + 1);
+    
     if (computer <= 3) {
         computer = 'rock';
     } 
@@ -177,28 +179,28 @@ function game (computer){
     else {
 computer = 'scissors';
     }
-    };
-
+    
+    
     if (user === computer) {
-        return 'its a tie';
+        console.log('its a tie');
     }
     else if (user === "rock" && computer === "paper"){
-        return 'you lose';
+        console.log('you lose');
     }
     else if (user === "rock" && computer === "scissors"){
-return 'you win';
+        console.log('you win');
     }
     else if (user === "paper" && computer === "rock"){
-return 'you win';
+        console.log('you win');
     }
     else if (user === "paper" && computer === "scissors"){
-return 'you lose';
+        console.log('you lose');
     }
     else if (user === "scissors" && computer === "rock"){
-return 'you lose';
+        console.log('you lose');
     }
     else if (user === "scissors" && computer === "paper"){
-return 'you win';
+        console.log('you win');
     }
 
     
@@ -248,12 +250,11 @@ Using the annoyingSong function below do the following:
   2. At each iteration, it should return this string: 
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
-function annoyingSong(i) {
-    for (bottles>0; bottles--){
-        return "${bottles} bottles of soda on the wall ${bottles} of soda, take one down and pass it around ${bottlesa-1
-        }"
-    }
+function annoyingSong(i){
 
+}
+    
+    
 annoyingSong();
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
