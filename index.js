@@ -202,7 +202,7 @@ computer = 'scissors';
     else if (user === "scissors" && computer === "paper"){
         console.log('you win');
     }
-
+}
     
 game();
 
